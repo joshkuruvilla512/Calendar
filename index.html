@@ -21,84 +21,205 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
-    <!-- 9AM -->
-    <div id="9" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">9AM</div>
-      <textarea name="9AM-input" id="9AM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
-    </div>
-    <!-- 10AM -->
-    <div id="10" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">10AM</div>
-      <textarea name="10AM-input" id="10AM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
+    <div class="row hour" id="9Row">
+      <div class="col-md-2 hour">
+        9 AM
+      </div>
+      <div class="col-md-8 future time-block" data-hour="9">
+        <textarea class="description" id="description9"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="9" />
+      </div>
     </div>
 
-    <!-- 11AM -->
-    <div id="11" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">11AM</div>
-      <textarea name="11AM-input" id="11AM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
+    <div class="row hour" id="10Row">
+      <div class="col-md-2 hour">
+        10 AM
+      </div>
+      <div class="col-md-8 future time-block" data-hour="10">
+        <textarea class="description" id="description10"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="10" />
+      </div>
     </div>
 
-    <!-- 12PM -->
-    <div id="12" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">12PM</div>
-      <textarea name="12PM-input" id="12PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
+    <div class="row hour" id="11Row">
+      <div class="col-md-2 hour">
+        11 AM
+      </div>
+      <div class="col-md-8 future time-block" data-hour="11">
+        <textarea class="description" id="description11"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="11" />
+      </div>
     </div>
 
-    <!-- 1PM -->
-    <div id="13" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">13PM</div>
-      <textarea name="13PM-input" id="13PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
+    <div class="row hour" id="12Row">
+      <div class="col-md-2 hour">
+        Noon
+      </div>
+      <div class="col-md-8 future time-block" data-hour="12">
+        <textarea class="description" id="description12"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="12" />
+      </div>
     </div>
 
-    <!-- 2PM -->
-    <div id="14" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">14PM</div>
-      <textarea name="14PM-input" id="14PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
+    <div class="row hour" id="13Row">
+      <div class="col-md-2 hour">
+        1 PM
+      </div>
+      <div class="col-md-8 future time-block" data-hour="13">
+        <textarea class="description" id="description13"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="13" />
+      </div>
     </div>
 
-    <!-- 3PM -->
-    <div id="15" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">15PM</div>
-      <textarea name="15PM-input" id="15PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
+    <div class="row hour" id="14Row">
+      <div class="col-md-2 hour">
+        2 PM
+      </div>
+      <div class="col-md-8 future time-block" data-hour="14">
+        <textarea class="description" id="description14"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="14" />
+      </div>
     </div>
 
-    <!-- 4PM -->
-    <div id="16" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">16PM</div>
-      <textarea name="16PM-input" id="16PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
+    <div class="row hour" id="15Row">
+      <div class="col-md-2 hour">
+        3 PM
+      </div>
+      <div class="col-md-8 future time-block" data-hour="15">
+        <textarea class="description" id="description15"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="15" />
+      </div>
     </div>
 
-    <!-- 5PM -->
-    <div id="17" class="row time-block">
-      <!-- How much room the hour is going to take -->
-      <div class="col-sm-2 col-md-2">17PM</div>
-      <textarea name="17PM-input" id="17PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
-      <button class="col-sm-2 col-md-2">Submit</button>
+    <div class="row hour" id="16Row">
+      <div class="col-md-2 hour">
+        4 PM
+      </div>
+      <div class="col-md-8 future time-block" data-hour="16">
+        <textarea class="description" id="description16"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="16" />
+      </div>
+    </div>
+
+    <div class="row hour" id="17Row">
+      <div class="col-md-2 hour">
+        5 PM
+      </div>
+      <div class="col-md-8 future time-block" data-hour="17">
+        <textarea class="description" id="description17"></textarea>
+      </div>
+      <div class="col-md-2 saveDiv">
+        <input type="image" src="assets/images/icons8-save-64.png" class="saveBtn" data-time="17" />
+      </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
-  <script src="script.js"></script>
-  <script src="moment.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
 </html>
+
+
+<!-- 
+<div class="container">
+  Timeblocks go here
+  9AM
+  <div id="9" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">9AM</div>
+    <div class="future time-block" data-hour="9"></div>
+    <textarea class="input" id="9AM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+
+  
+  10AM
+  <div id="10" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">10AM</div>
+    <textarea name="10AM-input" id="10AM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+
+  11AM
+  <div id="11" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">11AM</div>
+    <textarea name="11AM-input" id="11AM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+
+  12PM
+  <div id="12" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">12PM</div>
+    <textarea name="12PM-input" id="12PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+
+  1PM
+  <div id="13" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">13PM</div>
+    <textarea name="13PM-input" id="13PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+
+  2PM
+  <div id="14" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">14PM</div>
+    <textarea name="14PM-input" id="14PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+
+  3PM
+  <div id="15" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">15PM</div>
+    <textarea name="15PM-input" id="15PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+
+  4PM
+  <div id="16" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">16PM</div>
+    <textarea name="16PM-input" id="16PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+
+  5PM
+  <div id="17" class="row time-block">
+    How much room the hour is going to take
+    <div class="col-sm-2 col-md-2">17PM</div>
+    <textarea name="17PM-input" id="17PM-input" cols="30" rows="10" class="col-sm-8 col-md-8"></textarea>
+    <button class="col-sm-2 col-md-2">Submit</button>
+  </div>
+</div> -->
