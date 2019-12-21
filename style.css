@@ -4,17 +4,6 @@ body {
   line-height: 1;
 }
 
-textarea{
-  height: 40px;
-  /* margin: 5px; */
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -23,18 +12,41 @@ textarea{
   border-bottom: 10px solid black;
 }
 
-.description{
-  white-space: pre-wrap;
+.col-md-8, .col-md-2 {
+  padding-left: 0px !important;
+  height: 100%;
 }
 
-.time-block{
-  text-align: center;
-  border-radius: 15px;
+#toastBody {
+  float: right;
+}
+
+.toast {
+  margin-right: 20%;
+}
+
+.description {
+  vertical-align: top;
+  background: transparent;
+  border: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+  white-space: pre-wrap;
+  font-size: 24px;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+  position: relative;
+  left: 0px;
+  top: -33px;
+  outline: none;
 }
 
 .row {
   white-space: pre-wrap;
-  height: 50px;
+  height: 80px;
   border-top: 1px solid white;;
 }
 
@@ -59,7 +71,7 @@ textarea{
   color: white;
 }
 
-.saveBtn {
+.saveDiv {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -67,7 +79,7 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
+.saveDiv i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
