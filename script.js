@@ -11,7 +11,7 @@ currentDayEl.text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 var update = function () {
     currentDayEl.text(moment().format('MMMM Do YYYY, h:mm:ss a'));
     // var currHour = moment().hour();
-    var currHour = 12;
+    var currHour = 24;
     textBoxEl.each(function (index, element) {
         element = $(element);
         if (currHour > element.attr("data-time")) {
@@ -51,25 +51,26 @@ saveBtn.on("click", function (event) {
     //We pick the "id" attribute from the element, descriptionTarget. This id is the key, and the key value is descriptionTarget.val().
     localStorage.setItem(descriptionTarget.attr("id"), JSON.stringify(descriptionTarget.val()));
 });
-$("#desc9").text(localStorage.getItem("desc9"));
-$("#desc10").text(localStorage.getItem("desc10"));
-$("#des11").text(localStorage.getItem("desc11"));
-$("#desc12").text(localStorage.getItem("desc12"));
-$("#desc13").text(localStorage.getItem("desc13"));
-$("#desc14").text(localStorage.getItem("desc14"));
-$("#desc15").text(localStorage.getItem("desc15"));
-$("#desc16").text(localStorage.getItem("desc16"));
-$("#desc17").text(localStorage.getItem("desc17"));
+$("#9AM-input").text(localStorage.getItem("9AM-input"));
+$("#10AM-input").text(localStorage.getItem("10AM-input"));
+$("#11AM-input").text(localStorage.getItem("11AM-input"));
+$("#12PM-input").text(localStorage.getItem("12PM-input"));
+$("#13PM-input").text(localStorage.getItem("13PM-input"));
+$("#14PM-input").text(localStorage.getItem("14PM-input"));
+$("#15PM-input").text(localStorage.getItem("15PM-input"));
+$("#16PM-input").text(localStorage.getItem("16PM-input"));
+$("#17PM-input").text(localStorage.getItem("17PM-input"));
     // // get most recent submission
     // var savedEvent = JSON.parse(localStorage.getItem("event"));
     // textInputEl.textContent = savedEvent.textInput;
 // }
-// });
+// });<!DOCTYPE html>
 
-// $("button").on("click", function (event) {
-//     // alert("Button Clicked!");
-//     event.preventDefault();
-//     var input = $("input").val();
-//     console.log(input);
-//     localStorage.setItem("input", JSON.stringify(input));
-// });
+
+$("button").on("click", function (event) {
+    // alert("Button Clicked!");
+    event.preventDefault();
+    var input = $("input").val();
+    console.log(input);
+    localStorage.setItem("input", JSON.stringify(input));
+});
